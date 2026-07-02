@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Don & Dolores</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- 1. HEADER & NAVIGATION -->
+    <header>
+        <div class="container nav-container">
+            <!-- Logo (Matched to screenshot exactly) -->
+            <a href="index.html" class="logo-container" aria-label="Don & Dolores Home">
+                <svg viewBox="0 0 200 260" class="logo-svg" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    style="color: #ffffff;">
+                    <path
+                        d="M 150,240 L 30,240 L 30,30 L 170,30 L 170,140 C 170,150 150,155 140,160 C 125,168 120,185 135,190 C 150,195 170,185 170,170 L 170,225"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <text x="45" y="152" font-family="'Inter', sans-serif" font-weight="300" font-size="28"
+                        fill="currentColor">Don</text>
+                    <text x="112" y="146" font-family="'Playfair Display', serif" font-style="italic" font-weight="600"
+                        font-size="24" fill="var(--accent-gold)">&amp;</text>
+                    <text x="45" y="196" font-family="'Inter', sans-serif" font-weight="700" font-size="30"
+                        fill="currentColor">Dolores</text>
+                </svg>
+            </a>
+
+            <!-- Nav Menu Links (Matched to screenshot exactly) -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">HOME</a></li>
+                    <li><a href="about.html" class="nav-link active">ABOUT US</a></li>
+                    <li><a href="menu.html" class="nav-link">MENU</a></li>
+                    <li><a href="index.html#aktiviteter" class="nav-link">ACTIVITIES</a></li>
+                    <li><a href="gallery.html" class="nav-link">GALLERY</a></li>
+                    <li><a href="index.html#kontakt" class="nav-link">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <!-- Action buttons -->
+            <div class="nav-actions">
+                <a href="#boka" class="btn btn-gold open-booking">BOOK A TABLE</a>
+
+                <!-- Mobile Navigation Toggle -->
+                <button class="mobile-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. DON & DOLORES (WELCOME HOME) SECTION -->
+    <section class="welcome-section about-hero-padding">
+        <div class="container">
+            <div class="welcome-grid">
+                <div class="welcome-image-wrap">
+                    <img src="gallery/2-scaled.webp" alt="Don & Dolores waitress with drinks" class="welcome-image">
+                </div>
+                <div class="welcome-content">
+                    <span class="welcome-subtitle">WELCOME HOME TO US</span>
+                    <h1 class="welcome-title">Don &amp; Dolores</h1>
+                    <p class="welcome-text">In the heart of Skellefteå's city center, Don &amp; Dolores offers a fusion
+                        of Swedish and Italian. Here, we let simple, delicious food made with good ingredients create
+                        space for conversation and joy.</p>
+                    <p class="welcome-text">Neapolitan pizza is interspersed with antipasti, pasta, Italian burgers and
+                        small dishes. Seasonal drinks, quality beers and Italian wines accompany the food or are enjoyed
+                        at our bar.</p>
+                    <div class="divider-line divider-line-light">A fusion of Swedish &amp; Italian</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. ABBAS AZEMI (FOUNDER) SECTION -->
+    <section class="founder-section">
+        <div class="container">
+            <div class="welcome-grid">
+                <div class="welcome-content">
+                    <span class="welcome-subtitle">THE MAN BEHIND DON &amp; DOLORES</span>
+                    <h2 class="welcome-title">Abbas Azemi</h2>
+                    <p class="welcome-text">Abbas Azemi is the founder behind Don &amp; Dolores. His passion for food
+                        combined with constant exploration and development has led him to Don &amp; Dolores.</p>
+                    <p class="welcome-text">For the past 10 years, he and his staff have run restaurants in Skellefteå
+                        and the surrounding area. For Abbas, meeting with family and friends is the central thing, and
+                        food should support and inspire memorable moments.</p>
+                    <div class="divider-line divider-line-dark">Passion, community &amp; sustainability</div>
+                </div>
+                <div class="welcome-image-wrap">
+                    <img src="assets/owner.webp" alt="Abbas Azemi, founder of Don & Dolores" class="welcome-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FOOTER SECTION -->
+    <footer>
+        <div class="container footer-grid">
+            <!-- Col 1: Brand -->
+            <div class="footer-col brand-col">
+                <span class="footer-logo">Don &amp; Dolores</span>
+                <p class="footer-brand-desc">A fusion between Swedish and Italian. Simple, tasty food made with good
+                    ingredients that gives room for conversation and joy.</p>
+                <div class="social-links" style="display:flex; gap:15px; margin-top:1.5rem;">
+                    <a href="https://www.instagram.com/dondolores_skelleftea/" target="_blank" aria-label="Instagram"
+                        style="color:#aaa; text-decoration:none;"><svg width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg></a>
+                    <a href="https://www.facebook.com/dondolores.skelleftea/" target="_blank" aria-label="Facebook"
+                        style="color:#aaa; text-decoration:none;"><svg width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg></a>
+                </div>
+            </div>
+
+            <!-- Col 2: Contact -->
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li><span style="display:flex; align-items:center; gap:8px;"><svg width="14" height="14"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg> +46 910 79 00 70</span></li>
+                    <li><span style="display:flex; align-items:center; gap:8px;"><svg width="14" height="14"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg> hej@dondolores.se</span></li>
+                    <li><span style="display:flex; align-items:center; gap:8px;"><svg width="14" height="14"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg> Kanalgatan 51, Skellefteå</span></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Quick links -->
+            <div class="footer-col">
+                <h3>Quick links</h3>
+                <ul class="footer-links">
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="index.html#aktiviteter">ACTIVITIES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Opening hours -->
+            <div class="footer-col">
+                <h3>Opening hours</h3>
+                <ul class="footer-hours">
+                    <li><span>Monday</span><span>15 - late</span></li>
+                    <li><span>Tuesday</span><span>15 - late</span></li>
+                    <li><span>Wednesday</span><span>15 - late</span></li>
+                    <li><span>Thursday</span><span>15 - late</span></li>
+                    <li><span>Friday</span><span>15 - late</span></li>
+                    <li><span>Saturday</span><span>15 - late</span></li>
+                    <li><span>Sunday</span><span>Closed</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="container">
+            <div class="footer-bottom"
+                style="display:flex; justify-content:space-between; align-items:center; margin-top:2rem; padding-top:2rem; border-top:1px solid rgba(255,255,255,0.1);">
+                <span class="footer-copy">© 2026 Don & Dolores. All rights reserved.</span>
+                <span class="footer-note" style="text-align:center;">We currently do not offer home delivery or online
+                    ordering. You are welcome to visit us and enjoy on site!</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Whatsapp Floating Icon -->
+    <a href="https://wa.me/46910790070" class="whatsapp-float" target="_blank" aria-label="Contact us on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M12.031 0C5.383 0 0 5.383 0 12.031c0 2.112.551 4.184 1.597 6.002L.135 23.364l5.48-1.439a11.97 11.97 0 006.416 1.838h.005c6.645 0 12.028-5.383 12.028-12.027 0-3.218-1.253-6.246-3.529-8.522A11.968 11.968 0 0012.031 0zm0 21.737h-.004a9.96 9.96 0 01-5.066-1.378l-.364-.216-3.766.988.995-3.674-.236-.376a9.971 9.971 0 01-1.523-5.29c0-5.5 4.478-9.977 9.98-9.977 2.666 0 5.171 1.039 7.054 2.922a9.977 9.977 0 012.92 7.058c-.001 5.5-4.48 9.977-9.98 9.977zM17.5 14.28c-.3-.15-1.785-.88-2.062-.98-.277-.1-.479-.15-.68.15-.202.3-.778.98-.953 1.18-.175.2-.35.225-.65.075-1.493-.746-2.585-1.365-3.567-2.616-.255-.325.253-.301.696-.887.15-.2.075-.375 0-.525-.075-.15-.68-1.64-.93-2.247-.243-.591-.49-.51-.68-.52h-.581c-.2 0-.525.075-.8.375-.275.3-1.05 1.025-1.05 2.5 0 1.475 1.075 2.9 1.225 3.1.15.2 2.115 3.225 5.12 4.525.714.31 1.27.495 1.704.633.716.227 1.368.195 1.88.118.572-.086 1.785-.73 2.035-1.43.25-.7.25-1.3.175-1.43-.075-.13-.275-.205-.575-.355z" />
+        </svg>
+        <span class="whatsapp-tooltip">Contact us</span>
+    </a>
+
+    <!-- WAITERAID BOOKING MODAL -->
+    <div class="booking-modal" id="bookingModal">
+        <div class="booking-content">
+            <div class="booking-header">
+                <button class="booking-back" id="modalBackBtn" style="display:none;" aria-label="Go back"><svg
+                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg></button>
+                <h3 class="booking-modal-title">DON & DOLORES</h3>
+                <button class="booking-close" aria-label="Close modal">&times;</button>
+            </div>
+
+            <div class="booking-body">
+                <!-- STEP 1: Meal -->
+                <div class="booking-step active" id="step1">
+                    <p data-translate="selectMeal" style="font-size: 0.9rem; margin-bottom: 0.5rem;">Välj måltid</p>
+                    <button class="meal-btn" data-translate="dinner" onclick="nextStep(2)">Middag</button>
+                </div>
+
+                <!-- STEP 2: Guests -->
+                <div class="booking-step" id="step2">
+                    <div class="selection-summary" data-translate="dinner">Middag</div>
+                    <p data-translate="selectGuestsTitle"
+                        style="font-size: 0.8rem; font-weight:700; margin: 1rem 0 0.5rem; letter-spacing:1px;">VÄLJ
+                        ANTAL PERSONER</p>
+                    <ul class="guest-list">
+                        <li><button class="guest-btn" data-guests-count="1" onclick="selectGuests(1)">1 person</button>
+                        </li>
+                        <li><button class="guest-btn" data-guests-count="2" onclick="selectGuests(2)">2
+                                personer</button></li>
+                        <li><button class="guest-btn" data-guests-count="3" onclick="selectGuests(3)">3
+                                personer</button></li>
+                        <li><button class="guest-btn" data-guests-count="4" onclick="selectGuests(4)">4
+                                personer</button></li>
+                        <li><button class="guest-btn" data-guests-count="5" onclick="selectGuests(5)">5
+                                personer</button></li>
+                        <li><button class="guest-btn" data-guests-count="6" onclick="selectGuests(6)">6
+                                personer</button></li>
+                        <li><button class="guest-btn" data-guests-count="7" onclick="selectGuests(7)">7
+                                personer</button></li>
+                        <li><button class="guest-btn" data-guests-count="8" onclick="selectGuests(8)">8
+                                personer</button></li>
+                        <li><button class="guest-btn" data-guests-count="9+" onclick="selectGuests('9+')">9+
+                                personer</button></li>
+                    </ul>
+                </div>
+
+                <!-- STEP 3: Date & Children -->
+                <div class="booking-step" id="step3">
+                    <div class="selection-summary" data-translate="dinner">Middag</div>
+                    <div class="booking-filters">
+                        <select class="filter-select" id="guestCountSelect">
+                            <option value="2">2 personer</option>
+                        </select>
+                        <select class="filter-select" id="childCountSelect">
+                            <option value="0" data-translate="childrenCountDefault">Varav barn antal</option>
+                            <option value="0" data-translate="children0">0 Barn</option>
+                            <option value="1" data-translate="children1">1 Barn</option>
+                            <option value="2" data-translate="children2">2 Barn</option>
+                        </select>
+                    </div>
+
+                    <div class="calendar-view">
+                        <div class="month-block">
+                            <h4 class="month-title" id="monthTitle" data-month-name="JULI" data-year="2026">JULI 2026
+                            </h4>
+                            <div class="calendar-grid">
+                                <div class="cal-day-header" data-day="1">MÅN</div>
+                                <div class="cal-day-header" data-day="2">TIS</div>
+                                <div class="cal-day-header" data-day="3">ONS</div>
+                                <div class="cal-day-header" data-day="4">TOR</div>
+                                <div class="cal-day-header" data-day="5">FRE</div>
+                                <div class="cal-day-header" data-day="6">LÖR</div>
+                                <div class="cal-day-header" data-day="7">SÖN</div>
+                                <div class="cal-day disabled">29</div>
+                                <div class="cal-day disabled">30</div>
+                                <div class="cal-day disabled">01</div>
+                                <div class="cal-day active" onclick="selectDate('3 July')">02</div>
+                                <div class="cal-day">03</div>
+                                <div class="cal-day">04</div>
+                                <div class="cal-day">05</div>
+                                <div class="cal-day">06</div>
+                                <div class="cal-day">07</div>
+                                <div class="cal-day">08</div>
+                                <div class="cal-day">09</div>
+                                <div class="cal-day">10</div>
+                                <div class="cal-day">11</div>
+                                <div class="cal-day">12</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 4: Time Selection -->
+                <div class="booking-step" id="step4">
+                    <div class="selection-summary" data-translate="dinner" style="margin-bottom:0.5rem;">Dinner</div>
+                    <div class="selection-details">
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg> <span id="finalGuests">2 guests</span></span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg> <span id="finalDate">3 July</span></span>
+                        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg> <span data-translate="time">Tid</span></span>
+                    </div>
+
+                    <div class="time-list">
+                        <div class="time-row"><span>16:00</span><button class="btn-book-time"
+                                data-translate="book">BOKA</button></div>
+                        <div class="time-row"><span>16:15</span><button class="btn-book-time"
+                                data-translate="book">BOKA</button></div>
+                        <div class="time-row"><span>16:30</span><button class="btn-book-time"
+                                data-translate="book">BOKA</button></div>
+                        <div class="time-row"><span>16:45</span><button class="btn-book-time"
+                                data-translate="book">BOKA</button></div>
+                        <div class="time-row"><span>17:00</span><button class="btn-book-time"
+                                data-translate="book">BOKA</button></div>
+                        <div class="time-row"><span>17:15</span><button class="btn-book-time"
+                                data-translate="book">BOKA</button></div>
+                        <div class="time-row"><span>17:30</span><button class="btn-book-time"
+                                data-translate="book">BOKA</button></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="booking-footer">
+                <div class="booking-footer-left">
+                    <span style="font-weight:700; letter-spacing: -1px; font-size:1.1rem; color:#ccc;">BB<span
+                            style="font-size:0.6rem; vertical-align:top; display:inline-block; line-height:1; margin-left:2px;">BOKA<br>BORD</span></span>
+                    <a href="#"
+                        style="color:#aaa; text-decoration:none; display:flex; align-items:center; gap:4px; font-size:0.8rem; margin-left:15px;"><svg
+                            width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                            <polyline points="10 17 15 12 10 7"></polyline>
+                            <line x1="15" y1="12" x2="3" y2="12"></line>
+                        </svg> <span data-translate="login">Logga in</span></a>
+                </div>
+                <div class="booking-footer-right" style="position: relative;">
+                    <button class="lang-switch-btn"
+                        style="background: none; border: none; color: inherit; font-size: inherit; display: flex; align-items: center; gap: 2px; cursor: pointer; padding: 0;">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" style="margin-right:2px;">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                        <span class="current-lang">Swedish</span>
+                    </button>
+                    <div class="lang-dropdown">
+                        <button class="lang-dropdown-option active" data-lang="sv"
+                            style="background: none; border: none; width: 100%; text-align: left; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; padding: 8px 12px; cursor: pointer;">
+                            <span>Swedish</span>
+                            <span class="check-icon">✓</span>
+                        </button>
+                        <button class="lang-dropdown-option" data-lang="en"
+                            style="background: none; border: none; width: 100%; text-align: left; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; padding: 8px 12px; cursor: pointer;">
+                            <span>English</span>
+                            <span class="check-icon" style="display: none;">✓</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Language Switcher -->
+    <div class="lang-switcher-float">
+        <select class="lang-select">
+            <option value="" disabled>Select Language</option>
+            <option value="en">English</option>
+            <option value="sv" selected>Swedish</option>
+        </select>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
