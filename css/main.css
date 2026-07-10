@@ -1451,6 +1451,23 @@ footer {
     border-bottom: 1.5px solid rgba(46, 46, 77, 0.25) !important;
 }
 
+.bg-light-blue .faq-accordion {
+    border-top: none;
+}
+.bg-light-blue .faq-item {
+    background-color: var(--bg-dark);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 0 1.5rem;
+    border-bottom: none;
+}
+.bg-light-blue .faq-question {
+    color: #ffffff !important;
+}
+.bg-light-blue .faq-answer {
+    color: #e0e0e0;
+}
+
 .bg-dark-blue {
     background-color: #2E2E4D !important;
     color: #ffffff !important;
