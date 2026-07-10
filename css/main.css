@@ -964,6 +964,12 @@ footer {
     font-family: 'Playfair Display', serif;
 }
 
+.classic-amp {
+    font-family: Georgia, 'Times New Roman', serif !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+}
+
 .activities-desc {
     color: #2e2e4d;
     font-size: 1.1rem;
