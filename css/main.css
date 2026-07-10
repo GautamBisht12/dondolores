@@ -1,7 +1,7 @@
 :root {
-    --bg-light: #FAF7F2;
-    --bg-dark: #2F2F4D;
-    --bg-darker: #1a1a2e;
+    --bg-light: #C5D7F0;
+    --bg-dark: #2E2E4D;
+    --bg-darker: #2E2E4D;
     --text-primary: #1C1B1A;
     --text-secondary: #5A5A58;
     --accent-gold: #D4AF37;
@@ -57,13 +57,30 @@ a {
     border-radius: 4px;
 }
 
-.btn-gold {
-    background-color: var(--accent-gold);
-    color: #fff;
+.btn-nav-booking {
+    background-color: #2E2E4D !important;
+    color: #ffffff !important;
+    border: 1px solid #2E2E4D !important;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.btn-gold:hover {
-    background-color: #b5952f;
+.btn-nav-booking:hover {
+    background-color: transparent !important;
+    color: #2E2E4D !important;
     transform: translateY(-2px);
+}
+
+/* Dark header / dark banner responsive overrides */
+header.scrolled .btn-nav-booking,
+.dark-hero-page header:not(.scrolled) .btn-nav-booking {
+    background-color: #C5D7F0 !important;
+    color: #2E2E4D !important;
+    border-color: #C5D7F0 !important;
+}
+header.scrolled .btn-nav-booking:hover,
+.dark-hero-page header:not(.scrolled) .btn-nav-booking:hover {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
 }
 
 .btn-outline {
@@ -90,7 +107,8 @@ header {
 }
 
 header.scrolled {
-    background: rgba(47, 47, 77, 0.95);
+    background-color: #2E2E4D !important;
+    background: #2E2E4D !important;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-dark);
     padding: 0.5rem 0;
@@ -181,7 +199,7 @@ header.scrolled {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.45);
     z-index: 1;
 }
 
@@ -210,6 +228,8 @@ header.scrolled {
 .hero-buttons {
     display: flex;
     gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
 }
 .hero-buttons .btn:first-child {
     background-color: transparent;
@@ -337,14 +357,14 @@ section {
     background: #fff;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(47, 47, 77, 0.15);
+    box-shadow: 0 10px 30px rgba(46, 46, 77, 0.15);
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .event-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 45px rgba(47, 47, 77, 0.35);
+    box-shadow: 0 20px 45px rgba(46, 46, 77, 0.35);
 }
 
 .event-img-wrap {
@@ -916,7 +936,7 @@ footer {
 
 /* REDESIGNED ACTIVITIES & EVENTS SECTION */
 .activities-section {
-    background-color: #C4D6F0;
+    background-color: #C5D7F0;
     color: #1c1b1a;
     padding: 7rem 0;
 }
@@ -934,7 +954,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 0.75rem;
-    color: #2F2F4D;
+    color: #2E2E4D;
 }
 
 .activities-title {
@@ -945,7 +965,7 @@ footer {
 }
 
 .activities-desc {
-    color: #2f2f4d;
+    color: #2e2e4d;
     font-size: 1.1rem;
     opacity: 0.9;
 }
@@ -958,21 +978,21 @@ footer {
 }
 
 .activities-card {
-    background: #2F2F4D;
+    background: #2E2E4D;
     color: #fff;
     padding: 3.5rem 2.5rem;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    box-shadow: 0 10px 30px rgba(47, 47, 77, 0.15);
+    box-shadow: 0 10px 30px rgba(46, 46, 77, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .activities-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 45px rgba(47, 47, 77, 0.35);
+    box-shadow: 0 20px 45px rgba(46, 46, 77, 0.35);
 }
 
 .activities-card-tag {
@@ -1020,7 +1040,7 @@ footer {
 
 .btn-calendar:hover {
     background: #1c1b1a;
-    color: #C4D6F0;
+    color: #C5D7F0;
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(28, 27, 26, 0.15);
 }
@@ -1036,14 +1056,14 @@ footer {
 }
 
 .activities-bottom-card {
-    background: #2F2F4D;
+    background: #2E2E4D;
     color: #fff;
     padding: 3.5rem 2.5rem;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 10px 30px rgba(47, 47, 77, 0.15);
+    box-shadow: 0 10px 30px rgba(46, 46, 77, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.05);
     min-height: 270px;
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -1051,7 +1071,7 @@ footer {
 
 .activities-bottom-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 45px rgba(47, 47, 77, 0.35);
+    box-shadow: 0 20px 45px rgba(46, 46, 77, 0.35);
 }
 
 .activities-bottom-card-title {
@@ -1157,13 +1177,13 @@ footer {
 
 /* Founder Section */
 .founder-section {
-    background-color: #C4D6F0;
+    background-color: #C5D7F0;
     color: #1c1b1a;
     padding: 8rem 0;
 }
 
 .founder-section .welcome-text {
-    color: #2f2f4d;
+    color: #2e2e4d;
     opacity: 0.9;
 }
 
@@ -1172,7 +1192,7 @@ footer {
 }
 
 .founder-section .welcome-subtitle {
-    color: #2F2F4D;
+    color: #2E2E4D;
 }
 
 .founder-grid {
@@ -1193,7 +1213,7 @@ footer {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #2F2F4D;
+    color: #2E2E4D;
     margin-bottom: 1rem;
 }
 
@@ -1206,7 +1226,7 @@ footer {
 }
 
 .founder-text {
-    color: #2f2f4d;
+    color: #2e2e4d;
     font-size: 1.05rem;
     line-height: 1.7;
     margin-bottom: 1.5rem;
@@ -1217,7 +1237,7 @@ footer {
     position: relative;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 15px 40px rgba(47, 47, 77, 0.15);
+    box-shadow: 0 15px 40px rgba(46, 46, 77, 0.15);
     border: 1px solid rgba(0,0,0,0.05);
 }
 
@@ -1238,7 +1258,7 @@ footer {
 }
 
 .divider-line-dark {
-    color: rgba(47, 47, 77, 0.8);
+    color: rgba(46, 46, 77, 0.8);
 }
 
 .divider-line::before,
@@ -1254,7 +1274,7 @@ footer {
 
 .divider-line-dark::before,
 .divider-line-dark::after {
-    border-bottom: 1.5px solid rgba(47, 47, 77, 0.3);
+    border-bottom: 1.5px solid rgba(46, 46, 77, 0.3);
 }
 
 .divider-line::before {
@@ -1330,8 +1350,8 @@ footer {
 /* Button dark outline with rich hover state */
 .btn-dark-outline {
     background: transparent;
-    border: 2px solid #2F2F4D;
-    color: #2F2F4D;
+    border: 2px solid #2E2E4D;
+    color: #2E2E4D;
     padding: 0.8rem 2.2rem;
     font-size: 0.85rem;
     font-weight: 700;
@@ -1344,10 +1364,10 @@ footer {
 }
 
 .btn-dark-outline:hover {
-    background: #2F2F4D;
+    background: #2E2E4D;
     color: #fff;
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(47, 47, 77, 0.25);
+    box-shadow: 0 8px 20px rgba(46, 46, 77, 0.25);
 }
 
 @media (max-width: 991px) {
@@ -1371,4 +1391,470 @@ footer {
         height: 140px;
     }
 }
+
+/* --- CLIENT FEEDBACK UPDATES --- */
+
+/* Hero logo and button updates */
+.hero-logo-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+.hero-logo-svg {
+    width: 140px;
+    height: auto;
+    color: #ffffff;
+}
+.btn-outline-white {
+    background-color: transparent;
+    border: 1.2px solid #ffffff;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    padding: 0.7rem 2.2rem;
+    transition: all 0.3s ease;
+}
+.btn-outline-white:hover {
+    background-color: #ffffff;
+    color: #2E2E4D;
+}
+
+/* Section background alternates */
+.bg-light-blue {
+    background-color: #C5D7F0 !important;
+    color: #2E2E4D !important;
+}
+.bg-light-blue h1,
+.bg-light-blue h2,
+.bg-light-blue h3,
+.bg-light-blue h4 {
+    color: #2E2E4D !important;
+}
+.bg-light-blue .welcome-subtitle,
+.bg-light-blue .section-tag {
+    color: #2E2E4D !important;
+    opacity: 0.85;
+}
+.bg-light-blue .welcome-text,
+.bg-light-blue .philosophy-text {
+    color: #2E2E4D !important;
+    opacity: 0.95;
+}
+.bg-light-blue .divider-line-light {
+    color: rgba(46, 46, 77, 0.65) !important;
+}
+.bg-light-blue .divider-line-light::before,
+.bg-light-blue .divider-line-light::after {
+    border-bottom: 1.5px solid rgba(46, 46, 77, 0.25) !important;
+}
+
+.bg-dark-blue {
+    background-color: #2E2E4D !important;
+    color: #ffffff !important;
+}
+.bg-dark-blue h1,
+.bg-dark-blue h2,
+.bg-dark-blue h3,
+.bg-dark-blue h4 {
+    color: #ffffff !important;
+}
+.bg-dark-blue .welcome-subtitle,
+.bg-dark-blue .section-tag,
+.bg-dark-blue .activities-subtitle {
+    color: var(--accent-gold) !important;
+    opacity: 1;
+}
+.bg-dark-blue .welcome-text,
+.bg-dark-blue .philosophy-text,
+.bg-dark-blue .activities-desc {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+.bg-dark-blue .divider-line-dark {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+.bg-dark-blue .divider-line-dark::before,
+.bg-dark-blue .divider-line-dark::after {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+.bg-dark-blue .btn-calendar {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+.bg-dark-blue .btn-calendar:hover {
+    background-color: #ffffff !important;
+    color: #2E2E4D !important;
+}
+
+.bg-light-cream {
+    background-color: #C5D7F0 !important;
+    color: #2E2E4D !important;
+}
+.bg-light-cream h1,
+.bg-light-cream h2,
+.bg-light-cream h3,
+.bg-light-cream h4 {
+    color: #2E2E4D !important;
+}
+.bg-light-cream .welcome-subtitle,
+.bg-light-cream .section-tag {
+    color: #2E2E4D !important;
+    opacity: 0.85;
+}
+.bg-light-cream .welcome-text,
+.bg-light-cream .philosophy-text {
+    color: #2E2E4D !important;
+    opacity: 0.95;
+}
+.bg-light-cream .faq-question {
+    color: #2E2E4D !important;
+}
+.bg-light-cream .faq-answer {
+    color: #2E2E4D !important;
+    opacity: 0.9;
+}
+.bg-light-cream .faq-item {
+    border-bottom: 1px solid rgba(46, 46, 77, 0.15) !important;
+}
+.bg-light-cream .faq-accordion {
+    border-top: 1px solid rgba(46, 46, 77, 0.15) !important;
+}
+
+/* Card overrides for alternating sections */
+.event-card.light-card {
+    background: #ffffff !important;
+    color: #2E2E4D !important;
+    box-shadow: 0 10px 30px rgba(46, 46, 77, 0.08) !important;
+}
+.event-card.light-card .event-title {
+    color: #2E2E4D !important;
+}
+.event-card.light-card .event-desc {
+    color: #44445c !important;
+}
+.event-card.light-card .activities-bottom-card-link {
+    color: #2E2E4D !important;
+    font-weight: 700;
+}
+.event-card.light-card .activities-bottom-card-link:hover {
+    color: var(--accent-gold) !important;
+}
+
+.activities-card.dark-card,
+.activities-bottom-card.dark-card {
+    background: var(--bg-darker) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+}
+.activities-card.dark-card .activities-card-body,
+.activities-bottom-card.dark-card .activities-bottom-card-body {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.btn-light-outline {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 0.8rem 2.2rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: inline-block;
+}
+.btn-light-outline:hover {
+    background: #ffffff;
+    color: #2E2E4D;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+}
+
+/* Welcome section note & tag pill updates */
+.welcome-note {
+    background-color: rgba(46, 46, 77, 0.06);
+    border-left: 3px solid #2E2E4D;
+    padding: 1.2rem 1.5rem;
+    margin: 1.8rem 0;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #2E2E4D;
+    line-height: 1.6;
+    border-radius: 0 4px 4px 0;
+}
+.welcome-tag-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid rgba(46, 46, 77, 0.2);
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #2E2E4D;
+    text-transform: uppercase;
+    background: transparent;
+    margin-top: 1rem;
+    width: fit-content;
+}
+.welcome-tag-pill .pill-icon {
+    font-size: 0.8rem;
+    color: #2E2E4D;
+    line-height: 1;
+}
+
+/* Dark background variations for welcome note & tag pill */
+.bg-dark-blue .welcome-note {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-left-color: var(--accent-gold);
+    color: #ffffff;
+}
+.bg-dark-blue .welcome-tag-pill {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+.bg-dark-blue .welcome-tag-pill .pill-icon {
+    color: var(--accent-gold);
+}
+
+/* Welcome title elegant upright serif and short underline line */
+.welcome-title {
+    font-family: Georgia, 'Times New Roman', serif !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    color: #2E2E4D !important;
+    display: block !important;
+}
+.welcome-title::after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 1.5px;
+    background-color: rgba(46, 46, 77, 0.35);
+    margin-top: 1.2rem;
+}
+.bg-dark-blue .welcome-title {
+    color: #ffffff !important;
+}
+.bg-dark-blue .welcome-title::after {
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* Image-based Logo styles */
+.logo-img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+.hero-logo-img {
+    width: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Italic styling for the last word of headings */
+.italic-title-part {
+    font-style: italic !important;
+    font-family: Georgia, 'Times New Roman', serif !important;
+}
+
+/* Founder quote block style */
+.founder-quote {
+    border-left: 2px solid rgba(46, 46, 77, 0.3);
+    color: #2E2E4D;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    padding-left: 1.2rem;
+    margin: 1.8rem 0;
+}
+.bg-dark-blue .founder-quote {
+    border-left-color: rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+}
+
+/* Founder Image Carousel */
+.founder-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+    height: 540px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+.carousel-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+}
+.carousel-slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+.founder-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+.carousel-arrow:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+.carousel-arrow.prev {
+    left: 12px;
+}
+.carousel-arrow.next {
+    right: 12px;
+}
+.carousel-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    z-index: 10;
+}
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.carousel-dot.active {
+    background: #ffffff;
+}
+
+/* Light blue card style inside dark blue sections */
+.light-blue-card {
+    background-color: #C5D7F0 !important;
+    color: #2E2E4D !important;
+    box-shadow: 0 10px 30px rgba(46, 46, 77, 0.04) !important;
+}
+.light-blue-card .event-title,
+.light-blue-card .activities-card-title,
+.light-blue-card .activities-bottom-card-title {
+    color: #2E2E4D !important;
+}
+.light-blue-card .event-desc,
+.light-blue-card .activities-card-body,
+.light-blue-card .activities-bottom-card-body {
+    color: #44445c !important;
+}
+.light-blue-card .activities-bottom-card-link {
+    color: #2E2E4D !important;
+    font-weight: 700;
+}
+.light-blue-card .activities-bottom-card-link:hover {
+    color: var(--accent-gold) !important;
+}
+
+/* Solid dark blue button */
+.btn-dark-blue {
+    background-color: #2E2E4D !important;
+    color: #ffffff !important;
+    border: 1px solid #2E2E4D !important;
+}
+.btn-dark-blue:hover {
+    background-color: transparent !important;
+    color: #2E2E4D !important;
+}
+
+/* Custom Hero Buttons matching screenshot */
+.btn-hero-solid {
+    background-color: #C5D7F0 !important;
+    color: #2E2E4D !important;
+    border: 1.2px solid #C5D7F0 !important;
+    padding: 0.8rem 2.2rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: inline-block;
+}
+.btn-hero-solid:hover {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+.btn-hero-outline {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border: 1.2px solid rgba(255, 255, 255, 0.4) !important;
+    padding: 0.8rem 2.2rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: inline-block;
+}
+.btn-hero-outline:hover {
+    background-color: #ffffff !important;
+    color: #2E2E4D !important;
+    border-color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+}
+
+/* Color inversion for transparent black logos on dark backgrounds */
+.hero-logo-img {
+    filter: brightness(0) invert(1) !important;
+}
+
+header.scrolled .logo-img {
+    filter: brightness(0) invert(1) !important;
+}
+
+.dark-hero-page header .logo-img {
+    filter: brightness(0) invert(1);
+}
+
 

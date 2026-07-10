@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="css/main.css">
     <style>
         .gallery-hero {
-            background-color: var(--bg-dark);
-            color: #fff;
-            padding: 10rem 0 4rem 0;
-            text-align: center;
+            padding: 0 !important;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .gallery-hero h1 {
             font-size: clamp(2.5rem, 4vw, 3.5rem);
@@ -199,21 +199,60 @@
                 height: 40px;
             }
         }
+
+        /* Animated Gallery Hero Background */
+        .gallery-hero-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 120vw;
+            height: 120vh;
+            transform: translate(-50%, -50%) rotate(-8deg);
+            z-index: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            background-color: var(--bg-dark);
+        }
+        .marquee-row {
+            display: flex;
+            gap: 20px;
+            width: max-content;
+            animation: scrollLeft 40s linear infinite;
+        }
+        .marquee-row.reverse {
+            animation: scrollRight 45s linear infinite;
+        }
+        .marquee-img {
+            width: 300px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            opacity: 0.5;
+            transition: opacity 0.3s;
+        }
+        .marquee-img:hover {
+            opacity: 0.9;
+        }
+
+        @keyframes scrollLeft {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        @keyframes scrollRight {
+            0% { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
+        }
     </style>
 </head>
-<body>
+<body class="dark-hero-page">
     <!-- 1. HEADER & NAVIGATION -->
     <header>
         <div class="container nav-container">
             <!-- Logo (Matched to screenshot exactly) -->
             <a href="index.html" class="logo-container" aria-label="Don & Dolores Home">
-                <svg viewBox="0 0 200 260" class="logo-svg" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: #ffffff;">
-                    <path d="M 150,240 L 30,240 L 30,30 L 170,30 L 170,140 C 170,150 150,155 140,160 C 125,168 120,185 135,190 C 150,195 170,185 170,170 L 170,225" 
-                          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <text x="45" y="152" font-family="'Inter', sans-serif" font-weight="300" font-size="28" fill="currentColor">Don</text>
-                    <text x="112" y="146" font-family="'Playfair Display', serif" font-style="italic" font-weight="600" font-size="24" fill="var(--accent-gold)">&amp;</text>
-                    <text x="45" y="196" font-family="'Inter', sans-serif" font-weight="700" font-size="30" fill="currentColor">Dolores</text>
-                </svg>
+                <img src="assets/logo.webp" alt="Don & Dolores Logo" class="logo-img">
             </a>
 
             <!-- Nav Menu Links (Matched to screenshot exactly) -->
@@ -230,7 +269,7 @@
 
             <!-- Action buttons -->
             <div class="nav-actions">
-                <a href="#boka" class="btn btn-gold open-booking">BOOK A TABLE</a>
+                <a href="#boka" class="btn btn-nav-booking open-booking">BOOK A TABLE</a>
                 
                 <!-- Mobile Navigation Toggle -->
                 <button class="mobile-toggle" aria-label="Toggle Menu">
@@ -243,15 +282,84 @@
     </header>
 
     <!-- 2. HERO SECTION -->
-    <section class="gallery-hero">
-        <div class="container">
-            <h1>Gallery</h1>
-            <p>Take a virtual tour of Don & Dolores. Here is a look at our cozy atmosphere, wood-fired oven, and crafted dishes.</p>
+    <section class="hero gallery-hero" id="home" style="position: relative; overflow: hidden; background: none;">
+        <!-- Animated Background -->
+        <div class="gallery-hero-bg">
+            <div class="marquee-row">
+                <img src="gallery/1-scaled.webp" class="marquee-img">
+                <img src="gallery/2-scaled.webp" class="marquee-img">
+                <img src="gallery/3-scaled.webp" class="marquee-img">
+                <img src="gallery/4-scaled.webp" class="marquee-img">
+                <img src="gallery/5-scaled.webp" class="marquee-img">
+                <img src="gallery/6-scaled.webp" class="marquee-img">
+                <img src="gallery/7-scaled.webp" class="marquee-img">
+                <img src="gallery/1-scaled.webp" class="marquee-img">
+                <img src="gallery/2-scaled.webp" class="marquee-img">
+                <img src="gallery/3-scaled.webp" class="marquee-img">
+                <img src="gallery/4-scaled.webp" class="marquee-img">
+                <img src="gallery/5-scaled.webp" class="marquee-img">
+                <img src="gallery/6-scaled.webp" class="marquee-img">
+                <img src="gallery/7-scaled.webp" class="marquee-img">
+            </div>
+            <div class="marquee-row reverse">
+                <img src="gallery/8-scaled.webp" class="marquee-img">
+                <img src="gallery/9-scaled.webp" class="marquee-img">
+                <img src="gallery/10-scaled.webp" class="marquee-img">
+                <img src="gallery/11-scaled.webp" class="marquee-img">
+                <img src="gallery/12-scaled.webp" class="marquee-img">
+                <img src="gallery/13-scaled.webp" class="marquee-img">
+                <img src="gallery/14-scaled.webp" class="marquee-img">
+                <img src="gallery/8-scaled.webp" class="marquee-img">
+                <img src="gallery/9-scaled.webp" class="marquee-img">
+                <img src="gallery/10-scaled.webp" class="marquee-img">
+                <img src="gallery/11-scaled.webp" class="marquee-img">
+                <img src="gallery/12-scaled.webp" class="marquee-img">
+                <img src="gallery/13-scaled.webp" class="marquee-img">
+                <img src="gallery/14-scaled.webp" class="marquee-img">
+            </div>
+            <div class="marquee-row">
+                <img src="gallery/15-scaled.webp" class="marquee-img">
+                <img src="gallery/16-scaled.webp" class="marquee-img">
+                <img src="gallery/17-scaled.webp" class="marquee-img">
+                <img src="gallery/18-scaled.webp" class="marquee-img">
+                <img src="gallery/19-scaled.webp" class="marquee-img">
+                <img src="gallery/20-scaled.webp" class="marquee-img">
+                <img src="gallery/21-scaled.webp" class="marquee-img">
+                <img src="gallery/15-scaled.webp" class="marquee-img">
+                <img src="gallery/16-scaled.webp" class="marquee-img">
+                <img src="gallery/17-scaled.webp" class="marquee-img">
+                <img src="gallery/18-scaled.webp" class="marquee-img">
+                <img src="gallery/19-scaled.webp" class="marquee-img">
+                <img src="gallery/20-scaled.webp" class="marquee-img">
+                <img src="gallery/21-scaled.webp" class="marquee-img">
+            </div>
+        </div>
+        <div class="hero-overlay" style="background: linear-gradient(to bottom, rgba(10, 10, 15, 0.5) 0%, rgba(10, 10, 15, 0.95) 100%); z-index: 1;"></div>
+        <div class="container text-center" style="position: relative; z-index: 2;">
+            <!-- Centered Boxed Logo inside Hero -->
+            <div class="hero-logo-wrap" style="margin-bottom: 1.5rem;">
+                <img src="assets/logo.webp" alt="Don & Dolores Logo" class="hero-logo-img" style="width: 220px; height: auto;">
+            </div>
+            <!-- Underline separator -->
+            <div style="width: 45px; height: 1.5px; background-color: rgba(255, 255, 255, 0.4); margin: 1.5rem auto;"></div>
+            
+            <h1 class="hero-title" style="font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-size: 1.35rem; font-weight: 400; margin-bottom: 2.5rem; letter-spacing: 0.5px; color: #ffffff;">Italiensk mat i hjärtat av Skellefteå</h1>
+            
+            <div class="hero-buttons">
+                <a href="#boka" class="btn btn-hero-solid open-booking">BOKA BORD</a>
+                <a href="#gallery-start" class="btn btn-hero-outline">SE GALLERI</a>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="hero-scroll-indicator" style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); text-align: center; color: rgba(255, 255, 255, 0.5); font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; z-index: 2;">
+            <span>SKROLLA</span>
+            <div style="width: 1.2px; height: 35px; background-color: rgba(255, 255, 255, 0.35); margin: 8px auto 0 auto;"></div>
         </div>
     </section>
 
     <!-- 3. GALLERY GRID SECTION -->
-    <section class="gallery-section">
+    <section class="gallery-section" id="gallery-start">
         <div class="container">
             <div class="gallery-grid">
                 <!-- Grid items generated dynamically in JS or hardcoded for SEO indexing -->

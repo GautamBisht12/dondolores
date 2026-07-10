@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navMenu.style.top = '100%';
             navMenu.style.left = '0';
             navMenu.style.width = '100%';
-            navMenu.style.background = 'rgba(47, 47, 77, 0.98)';
+            navMenu.style.background = 'rgba(46, 46, 77, 0.98)';
             navMenu.style.padding = '1rem';
         });
     }
@@ -294,6 +294,59 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.textContent = originalText;
                 btn.style.background = 'var(--btn-blue)';
             }, 1500);
+        });
+    });
+
+    // --- FOUNDER CAROUSEL LOGIC ---
+    const carousels = document.querySelectorAll('.founder-carousel');
+    carousels.forEach(carousel => {
+        const slides = carousel.querySelectorAll('.carousel-slide');
+        const dots = carousel.querySelectorAll('.carousel-dot');
+        const prevBtn = carousel.querySelector('.carousel-arrow.prev');
+        const nextBtn = carousel.querySelector('.carousel-arrow.next');
+        let slideIndex = 0;
+
+        function showSlide(index) {
+            if (index >= slides.length) slideIndex = 0;
+            else if (index < 0) slideIndex = slides.length - 1;
+            else slideIndex = index;
+
+            slides.forEach((slide, i) => {
+                if (i === slideIndex) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+
+            dots.forEach((dot, i) => {
+                if (i === slideIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                showSlide(slideIndex - 1);
+            });
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                showSlide(slideIndex + 1);
+            });
+        }
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', (e) => {
+                const targetIndex = parseInt(dot.getAttribute('data-slide'));
+                showSlide(targetIndex);
+            });
         });
     });
 

@@ -18,20 +18,9 @@
     <!-- 1. HEADER & NAVIGATION -->
     <header>
         <div class="container nav-container">
-            <!-- Logo (Matched to screenshot exactly) -->
+            <!-- Logo from assets/logo.webp -->
             <a href="index.html" class="logo-container" aria-label="Don & Dolores Home">
-                <svg viewBox="0 0 200 260" class="logo-svg" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    style="color: #ffffff;">
-                    <path
-                        d="M 150,240 L 30,240 L 30,30 L 170,30 L 170,140 C 170,150 150,155 140,160 C 125,168 120,185 135,190 C 150,195 170,185 170,170 L 170,225"
-                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <text x="45" y="152" font-family="'Inter', sans-serif" font-weight="300" font-size="28"
-                        fill="currentColor">Don</text>
-                    <text x="112" y="146" font-family="'Playfair Display', serif" font-style="italic" font-weight="600"
-                        font-size="24" fill="var(--accent-gold)">&amp;</text>
-                    <text x="45" y="196" font-family="'Inter', sans-serif" font-weight="700" font-size="30"
-                        fill="currentColor">Dolores</text>
-                </svg>
+                <img src="assets/logo.webp" alt="Don & Dolores Logo" class="logo-img">
             </a>
 
             <!-- Nav Menu Links (Matched to screenshot exactly) -->
@@ -48,7 +37,7 @@
 
             <!-- Action buttons -->
             <div class="nav-actions">
-                <a href="#boka" class="btn btn-gold open-booking">BOOK A TABLE</a>
+                <a href="#boka" class="btn btn-nav-booking open-booking">BOOK A TABLE</a>
 
                 <!-- Mobile Navigation Toggle -->
                 <button class="mobile-toggle" aria-label="Toggle Menu">
@@ -61,43 +50,51 @@
     </header>
 
     <!-- 2. DON & DOLORES (WELCOME HOME) SECTION -->
-    <section class="welcome-section about-hero-padding">
+    <section class="welcome-section about-hero-padding bg-dark-blue">
         <div class="container">
             <div class="welcome-grid">
-                <div class="welcome-image-wrap">
-                    <img src="gallery/2-scaled.webp" alt="Don & Dolores waitress with drinks" class="welcome-image">
+                <div style="display: flex; justify-content: center; align-items: center; padding: 2rem;">
+                    <img src="assets/logo.webp" alt="Don & Dolores Logo" style="width: 100%; max-width: 350px; height: auto; object-fit: contain;">
                 </div>
                 <div class="welcome-content">
-                    <span class="welcome-subtitle">WELCOME HOME TO US</span>
-                    <h1 class="welcome-title">Don &amp; Dolores</h1>
-                    <p class="welcome-text">In the heart of Skellefteå's city center, Don &amp; Dolores offers a fusion
-                        of Swedish and Italian. Here, we let simple, delicious food made with good ingredients create
-                        space for conversation and joy.</p>
-                    <p class="welcome-text">Neapolitan pizza is interspersed with antipasti, pasta, Italian burgers and
-                        small dishes. Seasonal drinks, quality beers and Italian wines accompany the food or are enjoyed
-                        at our bar.</p>
-                    <div class="divider-line divider-line-light">A fusion of Swedish &amp; Italian</div>
+                    <span class="welcome-subtitle">VÄLKOMMEN HEM TILL OSS</span>
+                    <h1 class="welcome-title">Don &amp; <span class="italic-title-part">Dolores</span></h1>
+                    <p class="welcome-text">Mitt i Skellefteås innerstad bjuder Don &amp; Dolores på en fusion mellan
+                        det svenska och italienska. Här låter vi enkel, god mat på bra råvaror ge utrymme för samtalet
+                        och glädjen.</p>
+                    <p class="welcome-text">Napolitansk pizza varvas med antipasti, pasta, italiensk burgare och små
+                        rätter. Säsongens drinkar, kvalitetsöl och italienska viner kompanjerar maten eller avnjuts i
+                        vår barsittning.</p>
+                    <div class="welcome-note">
+                        Don Dolores är en italiensk restaurang och bar på Kanalgatan 43 i Skellefteå. Vi serverar
+                        napolitansk pizza, handgjord pasta, antipasti och cocktails — öppet alla dagar i veckan.
+                    </div>
+                    <div class="welcome-tag-pill">
+                        <span class="pill-icon">✦</span> EN FUSION AV SVENSKT &amp; ITALIENSKT
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 3. ABBAS AZEMI (FOUNDER) SECTION -->
-    <section class="founder-section">
+    <section class="founder-section bg-light-blue">
         <div class="container">
             <div class="welcome-grid">
                 <div class="welcome-content">
                     <span class="welcome-subtitle">THE MAN BEHIND DON &amp; DOLORES</span>
-                    <h2 class="welcome-title">Abbas Azemi</h2>
-                    <p class="welcome-text">Abbas Azemi is the founder behind Don &amp; Dolores. His passion for food
-                        combined with constant exploration and development has led him to Don &amp; Dolores.</p>
-                    <p class="welcome-text">For the past 10 years, he and his staff have run restaurants in Skellefteå
-                        and the surrounding area. For Abbas, meeting with family and friends is the central thing, and
-                        food should support and inspire memorable moments.</p>
-                    <div class="divider-line divider-line-dark">Passion, community &amp; sustainability</div>
+                    <h2 class="welcome-title">Abbas <span class="italic-title-part">Azemi</span></h2>
+                    <p class="welcome-text">Abbas Azemi is the founder of Don &amp; Dolores. His passion for food
+                        combined with constantly exploring and evolving has led him to Don &amp; Dolores.</p>
+                    <div class="founder-quote">
+                        "I want every guest to feel welcome — like at home, but a little tastier."
+                    </div>
+                    <p class="welcome-text">For the past 10 years, he has run restaurants in Skellefteå and the
+                        surrounding area.</p>
                 </div>
-                <div class="welcome-image-wrap">
-                    <img src="assets/owner.webp" alt="Abbas Azemi, founder of Don & Dolores" class="welcome-image">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <img src="assets/owner-horizontal.jpg" alt="Abbas Azemi, founder of Don & Dolores"
+                        style="width: 100%; max-width: 440px; border-radius: 12px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); object-fit: cover;">
                 </div>
             </div>
         </div>

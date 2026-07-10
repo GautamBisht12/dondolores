@@ -14,28 +14,14 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="dark-hero-page">
 
     <!-- 1. HEADER & NAVIGATION -->
     <header>
         <div class="container nav-container">
-            <!-- Custom SVG Recreated Logo from Screenshot -->
+            <!-- Logo from assets/logo.webp -->
             <a href="index.html" class="logo-container" aria-label="Don & Dolores Home">
-                <!-- Changed logo color to white for visibility over dark background -->
-                <svg viewBox="0 0 200 260" class="logo-svg" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    style="color: #ffffff;">
-                    <!-- outer frame with curved loop and bottom-right gap -->
-                    <path
-                        d="M 150,240 L 30,240 L 30,30 L 170,30 L 170,140 C 170,150 150,155 140,160 C 125,168 120,185 135,190 C 150,195 170,185 170,170 L 170,225"
-                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <!-- Inside text matching branding -->
-                    <text x="45" y="152" font-family="'Inter', sans-serif" font-weight="300" font-size="28"
-                        fill="currentColor">Don</text>
-                    <text x="112" y="146" font-family="'Playfair Display', serif" font-style="italic" font-weight="600"
-                        font-size="24" fill="var(--accent-gold)">&amp;</text>
-                    <text x="45" y="196" font-family="'Inter', sans-serif" font-weight="700" font-size="30"
-                        fill="currentColor">Dolores</text>
-                </svg>
+                <img src="assets/logo.webp" alt="Don & Dolores Logo" class="logo-img">
             </a>
 
             <!-- Nav Menu Links (Matched to screenshot exactly) -->
@@ -52,7 +38,7 @@
 
             <!-- Action buttons -->
             <div class="nav-actions">
-                <a href="#boka" class="btn btn-gold open-booking">BOOK A TABLE</a>
+                <a href="#boka" class="btn btn-nav-booking open-booking">BOOK A TABLE</a>
 
                 <!-- Mobile Navigation Toggle -->
                 <button class="mobile-toggle" aria-label="Toggle Menu">
@@ -65,22 +51,44 @@
     </header>
 
     <!-- 2. HERO SECTION -->
-    <section class="hero" id="home" style="background-image: url('assets/hero_bg.png');">
+    <section class="hero" id="home" style="background-image: url('assets/hero-section.webp');">
         <div class="hero-overlay"></div>
         <div class="container text-center">
-            <span class="hero-subtitle">RESTAURANT & BAR IN SKELLEFTEÅ</span>
-            <h1 class="hero-title">Italian food in the heart of Skellefteå</h1>
-            <p class="hero-desc">A fusion between Swedish and Italian. Simple, tasty food made with good ingredients
-                that gives room for conversation and joy.</p>
-            <div class="hero-buttons" style="justify-content: center;">
-                <a href="menu.html" class="btn">View Menu</a>
-                <a href="#boka" class="btn btn-gold open-booking">BOOK A TABLE</a>
+            <!-- Centered Boxed Logo inside Hero -->
+            <div class="hero-logo-wrap" style="margin-bottom: 2rem;">
+                <img src="assets/logo.webp" alt="Don & Dolores Logo" class="hero-logo-img"
+                    style="width: 220px; height: auto;">
+            </div>
+
+            <span class="hero-subtitle"
+                style="display: block; color: rgba(255, 255, 255, 0.75); font-size: 0.8rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem;">RESTAURANT
+                & BAR IN SKELLEFTEÅ</span>
+            <h1 class="hero-title"
+                style="font-size: clamp(2rem, 5vw, 3.8rem); font-family: 'Playfair Display', Georgia, serif; font-weight: 600; margin-bottom: 1.5rem; color: #ffffff; line-height: 1.2;">
+                Italian food in the heart of Skellefteå</h1>
+            <p class="hero-desc"
+                style="max-width: 800px; margin: 0 auto 2.5rem auto; font-size: 1.05rem; color: rgba(255, 255, 255, 0.8); line-height: 1.6;">
+                A fusion between Swedish and Italian. Simple, tasty food made with good ingredients that gives room for
+                conversation and joy.</p>
+
+            <div class="hero-buttons">
+                <a href="#boka" class="btn btn-hero-solid open-booking">BOOK A TABLE</a>
+                <a href="menu.html" class="btn btn-hero-outline">SEE MENU</a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="hero-scroll-indicator"
+            style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); text-align: center; color: rgba(255, 255, 255, 0.5); font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; z-index: 2;">
+            <span>SCROLL</span>
+            <div
+                style="width: 1.2px; height: 35px; background-color: rgba(255, 255, 255, 0.35); margin: 8px auto 0 auto;">
             </div>
         </div>
     </section>
 
     <!-- 2.5. DON & DOLORES (WELCOME HOME) SECTION -->
-    <section class="welcome-section" id="welcome-home">
+    <section class="welcome-section bg-light-blue" id="welcome-home">
         <div class="container">
             <div class="welcome-grid">
                 <div class="welcome-collage">
@@ -92,68 +100,80 @@
                         class="welcome-collage-img collage-bottom">
                 </div>
                 <div class="welcome-content">
-                    <span class="welcome-subtitle">WELCOME HOME TO US</span>
-                    <h2 class="welcome-title" style="margin-bottom: 2rem;">Don &amp; Dolores</h2>
+                    <span class="welcome-subtitle">WELCOME TO OUR HOME</span>
+                    <h2 class="welcome-title" style="margin-bottom: 2rem;">Don &amp; <span
+                            class="italic-title-part">Dolores</span></h2>
                     <p class="welcome-text">In the heart of Skellefteå's city center, Don &amp; Dolores offers a fusion
-                        of Swedish and Italian. Here, we let simple, delicious food made with good ingredients create
-                        space for conversation and joy.</p>
-                    <p class="welcome-text">Neapolitan pizza is interspersed with antipasti, pasta, Italian burgers and
-                        small dishes. Seasonal drinks, quality beers and Italian wines accompany the food or are enjoyed
-                        at our bar.</p>
-                    <div class="divider-line divider-line-light">A fusion of Swedish &amp; Italian</div>
+                        between
+                        the Swedish and the Italian. Here we let simple, good food made from great ingredients leave
+                        room for conversation
+                        and joy.</p>
+                    <p class="welcome-text">Neapolitan pizza alternates with antipasti, pasta, Italian burger and small
+                        dishes. Seasonal drinks, quality beer and Italian wines accompany the food or are enjoyed in
+                        our bar seating.</p>
+                    <div class="welcome-note">
+                        Don Dolores is an Italian restaurant and bar on Kanalgatan 43 in Skellefteå. We serve
+                        Neapolitan pizza, handmade pasta, antipasti and cocktails — open every day of the week.
+                    </div>
+                    <div class="welcome-tag-pill">
+                        <span class="pill-icon">✦</span> A FUSION OF SWEDISH &amp; ITALIAN
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 2.6. ABBAS AZEMI (FOUNDER) SECTION -->
-    <section class="founder-section" id="founder">
+    <section class="founder-section bg-dark-blue" id="founder">
         <div class="container">
             <div class="welcome-grid">
                 <div class="welcome-content">
                     <span class="welcome-subtitle">THE MAN BEHIND DON &amp; DOLORES</span>
-                    <h2 class="welcome-title" style="margin-bottom: 2rem;">Abbas Azemi</h2>
-                    <p class="welcome-text">Abbas Azemi is the founder behind Don &amp; Dolores. His passion for food
-                        combined with constant exploration and development has led him to Don &amp; Dolores.</p>
-                    <div style="margin-top: 1.5rem;">
-                        <a href="about.html" class="btn-dark-outline">READ MORE</a>
+                    <h2 class="welcome-title" style="margin-bottom: 2rem;">Abbas <span
+                            class="italic-title-part">Azemi</span></h2>
+                    <p class="welcome-text">Abbas Azemi is the founder of Don &amp; Dolores. His passion for food
+                        combined with constantly exploring and evolving has led him to Don &amp; Dolores.</p>
+                    <div class="founder-quote">
+                        "I want every guest to feel welcome — like at home, but a little tastier."
                     </div>
+                    <p class="welcome-text">For the past 10 years, he has run restaurants in Skellefteå and the
+                        surrounding area.</p>
                 </div>
-                <div class="welcome-image-wrap">
-                    <img src="assets/owner.webp" alt="Abbas Azemi, founder of Don & Dolores" class="welcome-image">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <img src="assets/owner-horizontal.jpg" alt="Abbas Azemi, founder of Don & Dolores"
+                        style="width: 100%; max-width: 440px; border-radius: 12px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); object-fit: cover;">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 3. OUR STORY / PHILOSOPHY SECTION (ABOUT US) -->
-    <section class="philosophy" id="om-oss">
+    <section class="philosophy bg-light-blue" id="om-oss">
         <div class="container">
             <div class="philosophy-grid">
                 <div class="philosophy-content">
-                    <span class="section-tag">ABOUT US</span>
-                    <h2>A fusion of cultures</h2>
+                    <span class="section-tag">OM OSS</span>
+                    <h2>En fusion av kulturer</h2>
                     <p class="philosophy-text">
-                        Here at Don & Dolores, the deep flavors from Norrland are intertwined with the rich Italian food
-                        culture. We take local Norrland ingredients and prepare them with genuine Italian love. The
-                        result is simple, flavorful, and uncomplicated dishes that invite community.
+                        Här på Don &amp; Dolores flätas de djupa smakerna från Norrland samman med den rika italienska
+                        matkulturen. Vi tar lokala norrländska råvaror och tillagar dem med äkta italiensk kärlek.
+                        Resultatet är enkla, smakrika och okomplicerade rätter som bjuder in till gemenskap.
                     </p>
                     <div class="philosophy-highlights">
                         <div class="highlight-item">
-                            <h4>Local Ingredients</h4>
-                            <p>Bresaola from Jokkmokk and local cheeses paired with authentic Italian tomato sauce.</p>
+                            <h4>Lokala råvaror</h4>
+                            <p>Bresaola från Jokkmokk och lokala ostar parat med äkta italiensk tomatsås.</p>
                         </div>
                         <div class="highlight-item">
-                            <h4>Atmosphere & Joy</h4>
-                            <p>A warm meeting place right in the middle of town where conversations flow as freely as
-                                the wine.</p>
+                            <h4>Atmosfär &amp; glädje</h4>
+                            <p>En varm mötesplats mitt i stan där samtalen flödar lika fritt som vinet.</p>
                         </div>
                     </div>
                 </div>
                 <div class="philosophy-images">
-                    <img src="assets/interior.png" alt="Elegant restaurant dining room"
+                    <img src="gallery/10-scaled.webp" alt="Elegant restaurant dining room"
                         class="philosophy-img img-large">
-                    <img src="assets/dish.png" alt="Premium burrata with berry drizzle"
+                    <img src="gallery/17-scaled.webp" alt="Premium burrata with berry drizzle"
                         class="philosophy-img img-small">
                 </div>
             </div>
@@ -161,180 +181,191 @@
     </section>
 
     <!-- 3.5. MENU SECTION -->
-    <section class="menu-preview-section" id="menu"
-        style="background-color: var(--bg-dark); color: #ffffff; padding: 6rem 0;">
+    <section class="menu-preview-section bg-dark-blue" id="menu">
         <div class="container">
             <div class="text-center" style="max-width: 700px; margin: 0 auto 4rem auto;">
-                <span class="section-tag">OUR FOOD</span>
-                <h2>Discover Our Menu</h2>
-                <p style="color: #ccc;">Experience the unique fusion of Norrland ingredients and Italian passion.</p>
+                <span class="section-tag">VÅR MAT</span>
+                <h2>Upptäck vår <span class="italic-title-part">meny</span></h2>
+                <p>Upplev den unika fusionen av norrländska råvaror och italiensk passion.</p>
             </div>
 
             <div class="events-grid">
                 <!-- Card 1: Pizza -->
-                <article class="event-card" style="background: var(--bg-darker); color: #fff;">
+                <article class="event-card light-blue-card">
                     <div class="event-img-wrap">
-                        <img src="assets/hero_bg.png" alt="Neapolitan Pizza" class="event-img">
+                        <img src="assets/pizza.jpg" alt="Neapolitan Pizza" class="event-img">
                         <span class="event-day-badge" style="background: var(--accent-gold);">PIZZA</span>
                     </div>
                     <div class="event-content"
                         style="display: flex; flex-direction: column; height: calc(100% - 250px); justify-content: space-between;">
                         <div>
-                            <h3 class="event-title" style="font-family: 'Playfair Display', serif;">Neapolitan Pizza
+                            <h3 class="event-title" style="font-family: 'Playfair Display', serif;">Neapolitansk pizza
                             </h3>
-                            <p class="event-desc" style="color: #ccc; margin-bottom: 1.5rem;">Authentic wood-fired
-                                pizzas made with San Marzano tomatoes, fresh mozzarella, and local ingredients.</p>
+                            <p class="event-desc" style="margin-bottom: 1.5rem;">Äkta vedugnsbakade pizzor gjorda på San
+                                Marzano-tomater, färsk mozzarella och lokala råvaror.</p>
                         </div>
-                        <a href="menu.html#pizza-category" class="activities-bottom-card-link">View Pizzas &rarr;</a>
+                        <a href="menu.html#pizza-category" class="activities-bottom-card-link">Visa pizzor &rarr;</a>
                     </div>
                 </article>
 
                 <!-- Card 2: Pasta -->
-                <article class="event-card" style="background: var(--bg-darker); color: #fff;">
+                <article class="event-card light-blue-card">
                     <div class="event-img-wrap">
-                        <img src="assets/dish.png" alt="Fresh Pasta" class="event-img">
+                        <img src="assets/pasta.png" alt="Fresh Pasta" class="event-img">
                         <span class="event-day-badge" style="background: var(--accent-gold);">PASTA</span>
                     </div>
                     <div class="event-content"
                         style="display: flex; flex-direction: column; height: calc(100% - 250px); justify-content: space-between;">
                         <div>
-                            <h3 class="event-title" style="font-family: 'Playfair Display', serif;">Don's Pasta</h3>
-                            <p class="event-desc" style="color: #ccc; margin-bottom: 1.5rem;">Creamy, delicious homemade
-                                pasta dishes topped with fresh burrata, hot salami, or black cabbage pesto.</p>
+                            <h3 class="event-title" style="font-family: 'Playfair Display', serif;">Dons Pasta</h3>
+                            <p class="event-desc" style="margin-bottom: 1.5rem;">Krämiga, utsökta hemlagade pastarätter
+                                toppade med färsk burrata, het salami eller svartkålspesto.</p>
                         </div>
-                        <a href="menu.html#pasta-category" class="activities-bottom-card-link">View Pastas &rarr;</a>
+                        <a href="menu.html#pasta-category" class="activities-bottom-card-link">Visa pastor &rarr;</a>
                     </div>
                 </article>
 
                 <!-- Card 3: Antipasti -->
-                <article class="event-card" style="background: var(--bg-darker); color: #fff;">
+                <article class="event-card light-blue-card">
                     <div class="event-img-wrap">
-                        <img src="assets/interior.png" alt="Antipasti & Shareables" class="event-img">
+                        <img src="assets/Antipasti.jpg" alt="Antipasti & Shareables" class="event-img">
                         <span class="event-day-badge" style="background: var(--accent-gold);">ANTIPASTI</span>
                     </div>
                     <div class="event-content"
                         style="display: flex; flex-direction: column; height: calc(100% - 250px); justify-content: space-between;">
                         <div>
                             <h3 class="event-title" style="font-family: 'Playfair Display', serif;">Antipasti</h3>
-                            <p class="event-desc" style="color: #ccc; margin-bottom: 1.5rem;">Perfect starters and
-                                sharing boards with selected Italian cold cuts, local cheeses, olives, and fig jam.</p>
+                            <p class="event-desc" style="margin-bottom: 1.5rem;">Perfekta förrätter och delningsbrickor
+                                med utvalda italienska charkuterier, lokala ostar, oliver och fikonmarmelad.</p>
                         </div>
-                        <a href="menu.html#antipasti-category" class="activities-bottom-card-link">View Starters
+                        <a href="menu.html#antipasti-category" class="activities-bottom-card-link">Visa förrätter
                             &rarr;</a>
                     </div>
                 </article>
+            </div>
+
+            <!-- Centered See Full Menu Button -->
+            <div style="text-align: center; margin-top: 3.5rem;">
+                <a href="menu.html" class="btn btn-light-outline">SE HELA MENYN</a>
             </div>
         </div>
     </section>
 
     <!-- 4. EVENTS & SCHEDULE SECTION -->
-    <section class="activities-section" id="aktiviteter">
+    <section class="activities-section bg-dark-blue" id="aktiviteter">
         <div class="container">
             <div class="activities-header">
-                <span class="activities-subtitle">The week with us</span>
-                <h2 class="activities-title">Activities & Events</h2>
-                <p class="activities-desc">There's always something going on at Don & Dolores. Here's a taste of what's
-                    in store for you.</p>
+                <span class="activities-subtitle">Veckan hos oss</span>
+                <h2 class="activities-title">Aktiviteter &amp; <span class="italic-title-part">evenemang</span></h2>
+                <p class="activities-desc">Det händer alltid något på Don &amp; Dolores. Här är ett smakprov på vad vi
+                    har i beredskap för dig.</p>
             </div>
 
             <!-- Top Row Grid (3 Cards) -->
             <div class="activities-grid-top">
                 <!-- Card 1: Tuesdays -->
-                <div class="activities-card">
-                    <span class="activities-card-tag">Tuesdays</span>
-                    <h3 class="activities-card-title">Senior Tuesday</h3>
-                    <p class="activities-card-body">Every Tuesday we offer a 20% discount for all seniors. Enjoy our
-                        menu at a reasonable price in a warm and welcoming atmosphere.</p>
+                <div class="activities-card light-blue-card">
+                    <img src="assets/activities/2.jpg" alt="Seniortisdag"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1.5rem;">
+                    <span class="activities-card-tag">Tisdagar</span>
+                    <h3 class="activities-card-title">Seniortisdag</h3>
+                    <p class="activities-card-body">Varje tisdag erbjuder vi 20% rabatt för alla seniorer. Njut av vår
+                        meny till ett förmånligt pris i en varm och välkomnande atmosfär.</p>
                 </div>
 
                 <!-- Card 2: Monthly -->
-                <div class="activities-card">
-                    <span class="activities-card-tag">Monthly</span>
-                    <h3 class="activities-card-title">Quiz nights</h3>
-                    <p class="activities-card-body">Gather your team and compete in our popular quiz nights! Keep an eye
-                        on our social media for dates and registration. Exciting prizes await.</p>
+                <div class="activities-card light-blue-card">
+                    <img src="assets/activities/3.jpg" alt="Quizkvällar"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1.5rem;">
+                    <span class="activities-card-tag">Månadsvis</span>
+                    <h3 class="activities-card-title">Quizkvällar</h3>
+                    <p class="activities-card-body">Samla ditt lag och tävla i våra populära quizkvällar! Håll utkik på
+                        våra sociala medier för datum och anmälan. Spännande priser väntar.</p>
                 </div>
 
                 <!-- Card 3: Saturdays -->
-                <div class="activities-card">
-                    <span class="activities-card-tag">Saturdays</span>
-                    <h3 class="activities-card-title">Saturday Pulse</h3>
-                    <p class="activities-card-body">Saturday nights are all about music. Troubadours, live bands and DJs
-                        create the perfect atmosphere for a memorable evening.</p>
+                <div class="activities-card light-blue-card">
+                    <img src="assets/activities/1.jpg" alt="Lördagspuls"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1.5rem;">
+                    <span class="activities-card-tag">Lördagar</span>
+                    <h3 class="activities-card-title">Lördagspuls</h3>
+                    <p class="activities-card-body">Lördagskvällar handlar om musik. Trubadurer, liveband och DJ:s
+                        skapar den perfekta stämningen för en minnesvärd kväll.</p>
                 </div>
             </div>
 
             <!-- Monthly Calendar Button -->
             <div class="activities-calendar-btn-wrap">
-                <a href="https://www.instagram.com/dondolores_skelleftea/" target="_blank" class="btn-calendar">Monthly
-                    calendar</a>
+                <a href="https://www.instagram.com/dondolores_skelleftea/" target="_blank"
+                    class="btn-calendar">Månadskalender</a>
             </div>
 
             <!-- Bottom Row Grid (3 Cards) -->
             <div class="activities-grid-bottom">
                 <!-- Bottom Card 1: Gift Card -->
-                <div class="activities-bottom-card">
-                    <h3 class="activities-bottom-card-title">Gift card</h3>
-                    <p class="activities-bottom-card-body">Give the gift of an experience. Our gift cards are perfect as
-                        a gift for someone you love.</p>
-                    <a href="#" class="activities-bottom-card-link">Buy gift cards &rarr;</a>
-                </div>
+                <!-- <div class="activities-bottom-card light-blue-card">
+                    <h3 class="activities-bottom-card-title">Presentkort</h3>
+                    <p class="activities-bottom-card-body">Ge bort en upplevelse. Våra presentkort är perfekta som gåva
+                        till någon du tycker om.</p>
+                    <a href="#" class="activities-bottom-card-link">Köp presentkort &rarr;</a>
+                </div> -->
 
                 <!-- Bottom Card 2: Work with us -->
-                <div class="activities-bottom-card">
-                    <h3 class="activities-bottom-card-title">Work with us</h3>
-                    <p class="activities-bottom-card-body">Do you want to be part of the Don & Dolores family? We are
-                        always looking for passionate employees.</p>
-                    <a href="mailto:hej@dondolores.se" class="activities-bottom-card-link">Submit application &rarr;</a>
-                </div>
+                <!-- <div class="activities-bottom-card light-blue-card">
+                    <h3 class="activities-bottom-card-title">Jobba hos oss</h3>
+                    <p class="activities-bottom-card-body">Vill du bli en del av Don &amp; Dolores-familjen? Vi söker
+                        alltid passionerade medarbetare.</p>
+                    <a href="mailto:hej@dondolores.se" class="activities-bottom-card-link">Skicka ansökan &rarr;</a>
+                </div> -->
 
                 <!-- Bottom Card 3: Book a Table -->
-                <div class="activities-bottom-card">
-                    <h3 class="activities-bottom-card-title">Book a Table</h3>
-                    <p class="activities-bottom-card-body">Book easily online or contact us directly via e-mail:
+                <!-- <div class="activities-bottom-card light-blue-card">
+                    <h3 class="activities-bottom-card-title">Boka ett bord</h3>
+                    <p class="activities-bottom-card-body">Boka enkelt online eller kontakta oss direkt via e-post:
                         hej@dondolores.se</p>
-                    <a href="#" class="activities-bottom-card-link open-booking">Book now &rarr;</a>
-                </div>
+                    <a href="#" class="activities-bottom-card-link open-booking">Boka nu &rarr;</a>
+                </div> -->
             </div>
         </div>
     </section>
 
     <!-- 5. FAQ SECTION -->
-    <section class="faq-section" id="faq" style="background-color: var(--bg-dark); color: #fff; padding: 6rem 0;">
+    <section class="faq-section bg-dark-blue" id="faq">
         <div class="container">
             <div class="text-center" style="max-width: 700px; margin: 0 auto 3rem auto;">
-                <span class="section-tag">QUESTIONS & ANSWERS</span>
-                <h2>Frequently Asked Questions</h2>
+                <span class="section-tag">FRÅGOR &amp; SVAR</span>
+                <h2>Vanliga frågor</h2>
             </div>
             <div class="faq-accordion" style="max-width: 800px; margin: 0 auto;">
                 <div class="faq-item">
-                    <button class="faq-question">Do you offer vegan options?<span class="faq-icon">+</span></button>
-                    <div class="faq-answer">
-                        <p>Yes! We have several vegetarian and vegan options on the menu. Our chefs are also happy to
-                            adapt dishes where possible.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">Can I book a table for a large group?<span
+                    <button class="faq-question">Erbjuder ni veganska alternativ?<span
                             class="faq-icon">+</span></button>
                     <div class="faq-answer">
-                        <p>Absolutely. For groups of more than 8 people, please contact us directly by email or phone so
-                            we can arrange the best possible experience for you.</p>
+                        <p>Ja! Vi har several vegetariska och veganska alternativ på menyn. Våra kockar anpassar även
+                            gärna rätter där det är möjligt.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">Do you do takeaway?<span class="faq-icon">+</span></button>
-                    <div class="faq-answer">
-                        <p>We currently do not offer home delivery or online ordering for takeaway. We want you to
-                            experience our food hot from the oven here in the restaurant.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">Are dogs allowed in the restaurant?<span
+                    <button class="faq-question">Kan jag boka bord för ett stort sällskap?<span
                             class="faq-icon">+</span></button>
                     <div class="faq-answer">
-                        <p>Well-behaved dogs are welcome in our outdoor seating area during the summer months. Indoors,
-                            we only allow guide dogs.</p>
+                        <p>Absolut. För grupper på mer än 8 personer, vänligen kontakta oss direkt via e-post eller
+                            telefon så ordnar vi bästa möjliga upplevelse för er.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Erbjuder ni takeaway?<span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Vi erbjuder för närvarande inte hemleverans eller onlinebeställning för takeaway. Vi vill att
+                            du ska uppleva vår mat rykande varm från ugnen här i restaurangen.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Är hundar tillåtna i restaurangen?<span
+                            class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Välartade hundar är välkomna på vår uteservering under sommarmånaderna. Inomhus tillåter vi
+                            endast ledarhundar.</p>
                     </div>
                 </div>
             </div>
