@@ -1806,6 +1806,30 @@ footer {
     color: var(--accent-gold) !important;
 }
 
+/* Dark blue card style inside light blue sections */
+.dark-blue-card {
+    background-color: #2E2E4D !important;
+    color: #ffffff !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+.dark-blue-card .event-title,
+.dark-blue-card .activities-card-title,
+.dark-blue-card .activities-bottom-card-title {
+    color: #ffffff !important;
+}
+.dark-blue-card .event-desc,
+.dark-blue-card .activities-card-body,
+.dark-blue-card .activities-bottom-card-body {
+    color: #e0e0e0 !important;
+}
+.dark-blue-card .activities-bottom-card-link {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+.dark-blue-card .activities-bottom-card-link:hover {
+    color: var(--accent-gold) !important;
+}
+
 /* Solid dark blue button */
 .btn-dark-blue {
     background-color: #2E2E4D !important;
