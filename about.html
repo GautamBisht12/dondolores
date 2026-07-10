@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -57,20 +57,20 @@
                     <img src="assets/logo.webp" alt="Don & Dolores Logo" style="width: 100%; max-width: 350px; height: auto; object-fit: contain;">
                 </div>
                 <div class="welcome-content">
-                    <span class="welcome-subtitle">VÄLKOMMEN HEM TILL OSS</span>
+                    <span class="welcome-subtitle">WELCOME TO OUR HOME</span>
                     <h1 class="welcome-title">Don <span class="classic-amp">&amp;</span> <span class="italic-title-part">Dolores</span></h1>
-                    <p class="welcome-text">Mitt i Skellefteås innerstad bjuder Don <span class="classic-amp">&amp;</span> Dolores på en fusion mellan
-                        det svenska och italienska. Här låter vi enkel, god mat på bra råvaror ge utrymme för samtalet
-                        och glädjen.</p>
-                    <p class="welcome-text">Napolitansk pizza varvas med antipasti, pasta, italiensk burgare och små
-                        rätter. Säsongens drinkar, kvalitetsöl och italienska viner kompanjerar maten eller avnjuts i
-                        vår barsittning.</p>
+                    <p class="welcome-text">In the heart of Skellefteå's city center, Don <span class="classic-amp">&amp;</span> Dolores offers a fusion between
+                        the Swedish and the Italian. Here we let simple, good food made from great ingredients leave room for conversation
+                        and joy.</p>
+                    <p class="welcome-text">Neapolitan pizza alternates with antipasti, pasta, Italian burger and small
+                        dishes. Seasonal drinks, quality beer and Italian wines accompany the food or are enjoyed in
+                        our bar seating.</p>
                     <div class="welcome-note">
-                        Don Dolores är en italiensk restaurang och bar på Kanalgatan 43 i Skellefteå. Vi serverar
-                        napolitansk pizza, handgjord pasta, antipasti och cocktails — öppet alla dagar i veckan.
+                        Don Dolores is an Italian restaurant and bar on Kanalgatan 43 in Skellefteå. We serve
+                        Neapolitan pizza, handmade pasta, antipasti and cocktails — open every day of the week.
                     </div>
                     <div class="welcome-tag-pill">
-                        <span class="pill-icon">✦</span> EN FUSION AV SVENSKT <span class="classic-amp">&amp;</span> ITALIENSKT
+                        <span class="pill-icon">✦</span> A FUSION OF SWEDISH <span class="classic-amp">&amp;</span> ITALIAN
                     </div>
                 </div>
             </div>
@@ -209,18 +209,17 @@
             <div class="booking-body">
                 <!-- STEP 1: Meal -->
                 <div class="booking-step active" id="step1">
-                    <p data-translate="selectMeal" style="font-size: 0.9rem; margin-bottom: 0.5rem;">Välj måltid</p>
-                    <button class="meal-btn" data-translate="dinner" onclick="nextStep(2)">Middag</button>
+                    <p data-translate="selectMeal" style="font-size: 0.9rem; margin-bottom: 0.5rem;">Select meal</p>
+                    <button class="meal-btn" data-translate="dinner" onclick="nextStep(2)">Dinner</button>
                 </div>
 
                 <!-- STEP 2: Guests -->
                 <div class="booking-step" id="step2">
-                    <div class="selection-summary" data-translate="dinner">Middag</div>
+                    <div class="selection-summary" data-translate="dinner">Dinner</div>
                     <p data-translate="selectGuestsTitle"
-                        style="font-size: 0.8rem; font-weight:700; margin: 1rem 0 0.5rem; letter-spacing:1px;">VÄLJ
-                        ANTAL PERSONER</p>
+                        style="font-size: 0.8rem; font-weight:700; margin: 1rem 0 0.5rem; letter-spacing:1px;">SELECT NUMBER OF GUESTS</p>
                     <ul class="guest-list">
-                        <li><button class="guest-btn" data-guests-count="1" onclick="selectGuests(1)">1 person</button>
+                        <li><button class="guest-btn" data-guests-count="1" onclick="selectGuests(1)">1 guest</button>
                         </li>
                         <li><button class="guest-btn" data-guests-count="2" onclick="selectGuests(2)">2
                                 personer</button></li>
@@ -243,31 +242,31 @@
 
                 <!-- STEP 3: Date & Children -->
                 <div class="booking-step" id="step3">
-                    <div class="selection-summary" data-translate="dinner">Middag</div>
+                    <div class="selection-summary" data-translate="dinner">Dinner</div>
                     <div class="booking-filters">
                         <select class="filter-select" id="guestCountSelect">
-                            <option value="2">2 personer</option>
+                            <option value="2">2 guests</option>
                         </select>
                         <select class="filter-select" id="childCountSelect">
-                            <option value="0" data-translate="childrenCountDefault">Varav barn antal</option>
-                            <option value="0" data-translate="children0">0 Barn</option>
-                            <option value="1" data-translate="children1">1 Barn</option>
-                            <option value="2" data-translate="children2">2 Barn</option>
+                            <option value="0" data-translate="childrenCountDefault">Number of children</option>
+                            <option value="0" data-translate="children0">0 Children</option>
+                            <option value="1" data-translate="children1">1 Child</option>
+                            <option value="2" data-translate="children2">2 Children</option>
                         </select>
                     </div>
 
                     <div class="calendar-view">
                         <div class="month-block">
-                            <h4 class="month-title" id="monthTitle" data-month-name="JULI" data-year="2026">JULI 2026
+                            <h4 class="month-title" id="monthTitle" data-month-name="JULY" data-year="2026">JULY 2026
                             </h4>
                             <div class="calendar-grid">
-                                <div class="cal-day-header" data-day="1">MÅN</div>
-                                <div class="cal-day-header" data-day="2">TIS</div>
-                                <div class="cal-day-header" data-day="3">ONS</div>
-                                <div class="cal-day-header" data-day="4">TOR</div>
-                                <div class="cal-day-header" data-day="5">FRE</div>
-                                <div class="cal-day-header" data-day="6">LÖR</div>
-                                <div class="cal-day-header" data-day="7">SÖN</div>
+                                <div class="cal-day-header" data-day="1">MON</div>
+                                <div class="cal-day-header" data-day="2">TUE</div>
+                                <div class="cal-day-header" data-day="3">WED</div>
+                                <div class="cal-day-header" data-day="4">THU</div>
+                                <div class="cal-day-header" data-day="5">FRI</div>
+                                <div class="cal-day-header" data-day="6">SAT</div>
+                                <div class="cal-day-header" data-day="7">SUN</div>
                                 <div class="cal-day disabled">29</div>
                                 <div class="cal-day disabled">30</div>
                                 <div class="cal-day disabled">01</div>
@@ -309,24 +308,24 @@
                                 stroke-width="2">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <polyline points="12 6 12 12 16 14"></polyline>
-                            </svg> <span data-translate="time">Tid</span></span>
+                            </svg> <span data-translate="time">Time</span></span>
                     </div>
 
                     <div class="time-list">
                         <div class="time-row"><span>16:00</span><button class="btn-book-time"
-                                data-translate="book">BOKA</button></div>
+                                data-translate="book">BOOK</button></div>
                         <div class="time-row"><span>16:15</span><button class="btn-book-time"
-                                data-translate="book">BOKA</button></div>
+                                data-translate="book">BOOK</button></div>
                         <div class="time-row"><span>16:30</span><button class="btn-book-time"
-                                data-translate="book">BOKA</button></div>
+                                data-translate="book">BOOK</button></div>
                         <div class="time-row"><span>16:45</span><button class="btn-book-time"
-                                data-translate="book">BOKA</button></div>
+                                data-translate="book">BOOK</button></div>
                         <div class="time-row"><span>17:00</span><button class="btn-book-time"
-                                data-translate="book">BOKA</button></div>
+                                data-translate="book">BOOK</button></div>
                         <div class="time-row"><span>17:15</span><button class="btn-book-time"
-                                data-translate="book">BOKA</button></div>
+                                data-translate="book">BOOK</button></div>
                         <div class="time-row"><span>17:30</span><button class="btn-book-time"
-                                data-translate="book">BOKA</button></div>
+                                data-translate="book">BOOK</button></div>
                     </div>
                 </div>
 
@@ -336,7 +335,7 @@
             <div class="booking-footer">
                 <div class="booking-footer-left">
                     <span style="font-weight:700; letter-spacing: -1px; font-size:1.1rem; color:#ccc;">BB<span
-                            style="font-size:0.6rem; vertical-align:top; display:inline-block; line-height:1; margin-left:2px;">BOKA<br>BORD</span></span>
+                            style="font-size:0.6rem; vertical-align:top; display:inline-block; line-height:1; margin-left:2px;">BOOK<br>BORD</span></span>
                     <a href="#"
                         style="color:#aaa; text-decoration:none; display:flex; align-items:center; gap:4px; font-size:0.8rem; margin-left:15px;"><svg
                             width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -344,7 +343,7 @@
                             <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
                             <polyline points="10 17 15 12 10 7"></polyline>
                             <line x1="15" y1="12" x2="3" y2="12"></line>
-                        </svg> <span data-translate="login">Logga in</span></a>
+                        </svg> <span data-translate="login">Log in</span></a>
                 </div>
                 <div class="booking-footer-right" style="position: relative;">
                     <button class="lang-switch-btn"
@@ -357,18 +356,16 @@
                                 d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
                             </path>
                         </svg>
-                        <span class="current-lang">Swedish</span>
+                        <span class="current-lang">English</span>
                     </button>
                     <div class="lang-dropdown">
-                        <button class="lang-dropdown-option active" data-lang="sv"
-                            style="background: none; border: none; width: 100%; text-align: left; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; padding: 8px 12px; cursor: pointer;">
+                        <button class="lang-dropdown-option" data-lang="sv" style="background: none; border: none; width: 100%; text-align: left; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; padding: 8px 12px; cursor: pointer;">
                             <span>Swedish</span>
-                            <span class="check-icon">✓</span>
-                        </button>
-                        <button class="lang-dropdown-option" data-lang="en"
-                            style="background: none; border: none; width: 100%; text-align: left; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; padding: 8px 12px; cursor: pointer;">
-                            <span>English</span>
                             <span class="check-icon" style="display: none;">✓</span>
+                        </button>
+                        <button class="lang-dropdown-option active" data-lang="en" style="background: none; border: none; width: 100%; text-align: left; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; padding: 8px 12px; cursor: pointer;">
+                            <span>English</span>
+                            <span class="check-icon">✓</span>
                         </button>
                     </div>
                 </div>
@@ -380,8 +377,8 @@
     <div class="lang-switcher-float">
         <select class="lang-select">
             <option value="" disabled>Select Language</option>
-            <option value="en">English</option>
-            <option value="sv" selected>Swedish</option>
+            <option value="en" selected>English</option>
+            <option value="sv">Swedish</option>
         </select>
     </div>
 

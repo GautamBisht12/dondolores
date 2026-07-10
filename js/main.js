@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- LANGUAGE TRANSLATIONS FOR BOOKING MODAL ---
-    let currentLanguage = 'sv'; // default
+    let currentLanguage = 'en'; // default
 
     const translations = {
         sv: {
